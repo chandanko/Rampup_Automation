@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230905 12:50:05.654" rpa="false" schemaversion="4">
+<suite id="s1" name="Login page2" source="C:\Users\Chandan KO-2979\PycharmProjects\POM\Framework\TestCycles\module2\Login_page2.robot">
+<test id="s1-t1" name="Testcase_01" line="6">
+<kw name="Automating login page_l2" library="Ui_keywords">
+<kw name="open browser and maximize" library="Ui_keywords">
+<arg>${loginurl_2}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230905 12:50:05.873" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<status status="PASS" starttime="20230905 12:50:05.873" endtime="20230905 12:50:10.472"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230905 12:50:10.472" endtime="20230905 12:50:10.589"/>
+</kw>
+<status status="PASS" starttime="20230905 12:50:05.873" endtime="20230905 12:50:10.589"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>17</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20230905 12:50:10.590" endtime="20230905 12:50:10.593"/>
+</kw>
+<status status="PASS" starttime="20230905 12:50:05.873" endtime="20230905 12:50:10.593"/>
+</kw>
+<status status="PASS" starttime="20230905 12:50:05.872" endtime="20230905 12:50:10.594"/>
+</test>
+<test id="s1-t2" name="Testcase_02" line="8">
+<kw name="Enter email and password_l2" library="Ui_keywords">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${email_l2}</arg>
+<arg>${username_l2}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230905 12:50:10.602" level="INFO">Typing text 'Admin' into text field '//input[@name="username"]'.</msg>
+<status status="PASS" starttime="20230905 12:50:10.599" endtime="20230905 12:50:10.962"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${pass_l2}</arg>
+<arg>${password_l2}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230905 12:50:10.962" level="INFO">Typing text 'admin123' into text field '//input[@name="password"]'.</msg>
+<status status="PASS" starttime="20230905 12:50:10.962" endtime="20230905 12:50:11.051"/>
+</kw>
+<status status="PASS" starttime="20230905 12:50:10.598" endtime="20230905 12:50:11.052"/>
+</kw>
+<status status="PASS" starttime="20230905 12:50:10.596" endtime="20230905 12:50:11.052"/>
+</test>
+<test id="s1-t3" name="Testcase_03" line="10">
+<kw name="Submit_l2" library="Ui_keywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${submit_l2}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230905 12:50:11.053" level="INFO">Clicking element '//button[@type="submit"]'.</msg>
+<status status="PASS" starttime="20230905 12:50:11.053" endtime="20230905 12:50:11.106"/>
+</kw>
+<status status="PASS" starttime="20230905 12:50:11.053" endtime="20230905 12:50:11.107"/>
+</kw>
+<kw name="close all browser" library="Ui_keywords">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20230905 12:50:11.107" endtime="20230905 12:50:17.286"/>
+</kw>
+<status status="PASS" starttime="20230905 12:50:11.107" endtime="20230905 12:50:17.286"/>
+</kw>
+<status status="PASS" starttime="20230905 12:50:11.053" endtime="20230905 12:50:17.287"/>
+</test>
+<status status="PASS" starttime="20230905 12:50:05.656" endtime="20230905 12:50:17.289"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Login page2">Login page2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

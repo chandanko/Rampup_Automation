@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230901 14:13:37.492" rpa="false" schemaversion="4">
+<suite id="s1" name="Ui keywords" source="C:\Users\Chandan KO-2979\PycharmProjects\POM\Framework\Resources\Keywords\Ui_keywords.robot">
+<test id="s1-t1" name="a" line="6">
+<kw name="open_browser_and_maximize">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${registration_url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230901 14:13:37.719" level="FAIL">Variable '${registration_url}' not found.</msg>
+<status status="FAIL" starttime="20230901 14:13:37.719" endtime="20230901 14:13:37.719"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230901 14:13:37.719" endtime="20230901 14:13:37.719"/>
+</kw>
+<status status="FAIL" starttime="20230901 14:13:37.718" endtime="20230901 14:13:37.719"/>
+</kw>
+<status status="FAIL" starttime="20230901 14:13:37.718" endtime="20230901 14:13:37.720">Variable '${registration_url}' not found.</status>
+</test>
+<status status="FAIL" starttime="20230901 14:13:37.494" endtime="20230901 14:13:37.721"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Ui keywords">Ui keywords</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230901 14:13:37.714" level="ERROR">Error in file 'C:\Users\Chandan KO-2979\PycharmProjects\POM\Framework\Resources\Keywords\Ui_keywords.robot' on line 3: Resource file 'Registration_variables.robot' does not exist.</msg>
+<msg timestamp="20230901 14:13:37.716" level="ERROR">Error in file 'C:\Users\Chandan KO-2979\PycharmProjects\POM\Framework\Resources\Keywords\Ui_keywords.robot' on line 4: Resource file 'common_variables.robot' does not exist.</msg>
+</errors>
+</robot>

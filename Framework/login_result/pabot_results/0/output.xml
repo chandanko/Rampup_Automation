@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230905 13:16:42.692" rpa="false" schemaversion="4">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Login page1" source="C:\Users\Chandan KO-2979\PycharmProjects\POM\Framework\TestCycles\module2\Login_page1.robot">
+<test id="s1-s1-t1" name="Testcase_1" line="7">
+<kw name="Automating login page_l1" library="Ui_keywords">
+<kw name="open browser and maximize" library="Ui_keywords">
+<arg>${loginurl_1}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230905 13:16:42.926" level="INFO">Opening browser 'chrome' to base url 'https://qa-automation-practice.netlify.app/login'.</msg>
+<status status="PASS" starttime="20230905 13:16:42.925" endtime="20230905 13:16:45.889"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230905 13:16:45.889" endtime="20230905 13:16:46.003"/>
+</kw>
+<status status="PASS" starttime="20230905 13:16:42.924" endtime="20230905 13:16:46.003"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>17</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20230905 13:16:46.004" endtime="20230905 13:16:46.007"/>
+</kw>
+<status status="PASS" starttime="20230905 13:16:42.924" endtime="20230905 13:16:46.007"/>
+</kw>
+<status status="PASS" starttime="20230905 13:16:42.923" endtime="20230905 13:16:46.008"/>
+</test>
+<test id="s1-s1-t2" name="Testcase_2" line="9">
+<kw name="Enter email and password_l1" library="Ui_keywords">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${email_l1}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230905 13:16:46.014" level="INFO">Typing text 'chandan@gmail.com' into text field '//input[@id="email"]'.</msg>
+<status status="PASS" starttime="20230905 13:16:46.012" endtime="20230905 13:16:46.135"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${password_l1}</arg>
+<arg>${pass}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230905 13:16:46.137" level="INFO">Typing text 'chandan17' into text field '//input[@id="password"]'.</msg>
+<status status="PASS" starttime="20230905 13:16:46.136" endtime="20230905 13:16:46.229"/>
+</kw>
+<status status="PASS" starttime="20230905 13:16:46.011" endtime="20230905 13:16:46.229"/>
+</kw>
+<status status="PASS" starttime="20230905 13:16:46.009" endtime="20230905 13:16:46.229"/>
+</test>
+<test id="s1-s1-t3" name="Testcase_3" line="11">
+<kw name="Submit_l1" library="Ui_keywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${submit_l1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230905 13:16:46.231" level="INFO">Clicking element '//button[@type="submit"]'.</msg>
+<status status="PASS" starttime="20230905 13:16:46.230" endtime="20230905 13:16:46.283"/>
+</kw>
+<status status="PASS" starttime="20230905 13:16:46.230" endtime="20230905 13:16:46.284"/>
+</kw>
+<kw name="close all browser" library="Ui_keywords">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20230905 13:16:46.285" endtime="20230905 13:16:52.489"/>
+</kw>
+<status status="PASS" starttime="20230905 13:16:46.284" endtime="20230905 13:16:52.490"/>
+</kw>
+<status status="PASS" starttime="20230905 13:16:46.229" endtime="20230905 13:16:52.491"/>
+</test>
+<doc>Automating login page_1</doc>
+<status status="PASS" starttime="20230905 13:16:42.720" endtime="20230905 13:16:52.491"/>
+</suite>
+<status status="PASS" starttime="20230905 13:16:42.703" endtime="20230905 13:16:52.493"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s1" name="Login page1">Suites.Login page1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
